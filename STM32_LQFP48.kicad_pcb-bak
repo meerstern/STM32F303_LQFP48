@@ -1582,7 +1582,7 @@
   (gr_text Crescent (at 156.6 123.4) (layer F.SilkS)
     (effects (font (size 1.2 1.2) (thickness 0.2)) (justify left))
   )
-  (gr_text "LQFP48\nSTM32F303\nv1.3" (at 155.75 131.75) (layer F.SilkS)
+  (gr_text "LQFP48\nSTM32F303\nv1.2" (at 155.75 131.75) (layer F.SilkS)
     (effects (font (size 1 1.2) (thickness 0.2)) (justify left))
   )
   (gr_text B9 (at 123.25 117.5 90) (layer F.SilkS)
