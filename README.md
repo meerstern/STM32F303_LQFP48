@@ -25,11 +25,21 @@ Nucleo等の評価ボードが発売されていない48ピンICの変換基板�
   * タクトスイッチを取り付けることでリセットボタンが実装可能です。
 
 ## 使用可能MPU
-  * STM32F303C8XX ROM64KB,  RMA12KB [Digikey Link][1]
-  * STM32F303CCXX ROM256KB, RAM40KB [Digikey Link][3]  
-※上記の全MPUで動作確認している訳ではありません。
+  * STM32F303C8XX ROM64KB,  RAM12KB  [Digikey Link][1]
+  * STM32F303CCXX ROM256KB, RAM40KB  [Digikey Link][3]
+  ※上記の全MPUで動作確認している訳ではありません。  
 
 
-License - MIT
 [1]: http://www.digikey.jp/product-detail/ja/stmicroelectronics/STM32F303C8T6/497-15198-ND/5051326 "*1"
 [3]: http://www.digikey.jp/product-detail/ja/stmicroelectronics/STM32F303CCT6/497-13318-ND/3660423 "*3"
+
+## 書き込み方法/使用方法
+  * アナログピンはVSSA、VDDAをジャンパさせます。
+  * BOOTピンを0へセットします。
+  * SWDピンが出ているため、STLinkで接続して書き込みします。
+  * SWDピンはNucleo等のSTLinkのピン配置と同じ順序です。
+  * 電源を供給し、NucleoやSTLinkV2プログラマ等を使用してSTLinkUtility等から書き込んでください。  
+  
+<img src="https://github.com/meerstern/STM32F303_LQFP48/blob/master/stm32fswd.png" width="360">
+
+License - MIT
